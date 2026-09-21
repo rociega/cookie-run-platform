@@ -37,10 +37,6 @@ Solana mainnet SOL is available as a separate premium payment route for users wh
 
 ![Current Cookie Run documentation](docs/images/cookie-run-docs-current.jpg)
 
-### Workspace marketplace
-
-![Cookie Run workspace marketplace](docs/images/workspace-marketplace.jpg)
-
 ## Demo thread
 
 The ready-to-post X/Twitter demo thread is in [`docs/x-thread.md`](docs/x-thread.md). It covers:

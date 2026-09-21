@@ -29,17 +29,17 @@ Solana mainnet SOL is available as a separate premium payment route for users wh
 
 ## Screenshots
 
-### Developer overview
+### Current landing page
 
-![Cookie Run developer overview](docs/images/developer-overview.png)
+![Current Cookie Run landing page](docs/images/cookie-run-landing-current.jpg)
 
-### Public landing page
+### Current documentation
 
-![Cookie Run landing page](docs/images/landing-page.png)
+![Current Cookie Run documentation](docs/images/cookie-run-docs-current.jpg)
 
 ### Workspace marketplace
 
-![Cookie Run workspace marketplace](docs/images/workspace-marketplace.png)
+![Cookie Run workspace marketplace](docs/images/workspace-marketplace.jpg)
 
 ## Demo thread
 
@@ -87,8 +87,7 @@ Requirements: Node.js 20+, pnpm, and a PostgreSQL database for the API.
 
 ```bash
 pnpm install
-pnpm --filter @workspace/api-server run dev
-pnpm --filter @workspace/icpx-landing run dev
+pnpm dev
 ```
 
 The application reads runtime configuration from environment variables. Do not commit `.env` files, wallet secrets, RPC credentials, or provider tokens.
@@ -96,11 +95,10 @@ The application reads runtime configuration from environment variables. Do not c
 ## Project layout
 
 ```text
-artifacts/icpx-landing/  Web application
-artifacts/icpx-docs/     Product documentation
-artifacts/api-server/    API and workspace lifecycle service
-lib/api-zod/             Shared API contracts
-lib/db/                  Database schema and access
+web/                     Web application and product documentation
+server/                  API and workspace lifecycle service
+packages/contracts/      Shared API contracts
+packages/database/       Database schema and access
 ```
 
 ## License

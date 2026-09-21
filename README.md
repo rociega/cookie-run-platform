@@ -41,6 +41,16 @@ Solana mainnet SOL is available as a separate premium payment route for users wh
 
 ![Cookie Run workspace marketplace](docs/images/workspace-marketplace.png)
 
+## Demo thread
+
+The ready-to-post X/Twitter demo thread is in [`docs/x-thread.md`](docs/x-thread.md). It covers:
+
+- What Cookie Run does
+- How a user rents and connects to a workspace
+- Why native COOK on Cookie Chain is useful
+- The separate Solana mainnet SOL route
+- The Cookie Chain Bridge guide for users who need to move assets onto Cookie Chain
+
 ## Architecture
 
 ```text

@@ -1,0 +1,192 @@
+/* Base variables used by shadcn/ui but adapted for a stark black/white tech feel */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 0%;
+  --card: 0 0% 98%;
+  --card-foreground: 0 0% 0%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 0%;
+  --primary: 0 0% 0%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 92%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 0 0% 96%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 0 0% 0%;
+  --radius: 0;
+}
+
+.dark {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 3%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 0%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 60%;
+  --accent: 0 0% 15%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 0%;
+  --border: 0 0% 15%;
+  --input: 0 0% 15%;
+  --ring: 0 0% 100%;
+}
+
+.provision-shell {
+  font-family: "Inter", sans-serif;
+  color: hsl(var(--foreground));
+}
+
+.provision-shell .font-mono {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.provision-shell .mono-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsl(var(--muted-foreground));
+}
+
+/* Core Buttons */
+.provision-shell .btn-primary {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: 1px solid hsl(var(--primary));
+  transition: all 0.15s ease;
+}
+
+.provision-shell .btn-primary:hover:not(:disabled) {
+  background: transparent;
+  color: hsl(var(--primary));
+}
+
+.provision-shell .btn-ghost {
+  background: transparent;
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(var(--border));
+  transition: all 0.15s ease;
+}
+
+.provision-shell .btn-ghost:hover:not(:disabled) {
+  background: hsl(var(--secondary));
+}
+
+.provision-shell .btn-ghost.active,
+.provision-shell .btn-ghost.active:hover:not(:disabled) {
+  border-color: hsl(var(--primary));
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+/* Form Elements */
+.provision-shell .input-field {
+  background: transparent;
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+  transition: border-color 0.15s ease;
+}
+
+.provision-shell .input-field:focus {
+  border-color: hsl(var(--primary));
+  outline: none;
+}
+
+.provision-shell .input-field::placeholder {
+  color: hsl(var(--muted-foreground));
+  opacity: 0.5;
+}
+
+/* Sections */
+.provision-shell .section-block {
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--card));
+  min-width: 0;
+}
+
+.provision-shell .section-header {
+  border-bottom: 1px solid hsl(var(--border));
+  padding: 12px 16px;
+  background: hsl(var(--muted) / 0.3);
+}
+
+.provision-shell .section-content {
+  padding: 16px;
+}
+
+.provision-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.provision-model-list {
+  max-height: 300px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 2px;
+}
+
+.provision-source-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.provision-source-fields > input:first-child {
+  flex-basis: 220px;
+}
+
+.provision-shell input {
+  min-width: 0;
+}
+
+.provision-shell button:focus-visible,
+.provision-shell summary:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .provision-layout {
+    grid-template-columns: minmax(0, 1fr) 360px;
+  }
+}
+
+@media (max-width: 540px) {
+  .provision-model-list > .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .provision-shell .section-content {
+    padding: 12px;
+  }
+}
+
+/* Custom Scrollbar for Textareas/Code blocks */
+.provision-shell ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.provision-shell ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.provision-shell ::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+}
+.provision-shell ::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}

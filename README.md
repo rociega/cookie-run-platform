@@ -53,7 +53,7 @@ Cookie Run quotes COOK before checkout and verifies the payment on Cookie Chain 
 
 Solana mainnet SOL remains available as a separate **premium** payment route. It is useful for users who prefer mainnet settlement, but COOK is the recommended option when the goal is the lowest rental cost.
 
-## What the demo shows
+## What Cookie Run provides
 
 - Browse an ephemeral GPU machine catalog
 - Choose a one-hour workspace

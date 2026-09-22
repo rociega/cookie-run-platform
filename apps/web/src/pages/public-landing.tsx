@@ -326,6 +326,7 @@ export default function PublicLanding() {
           <a href="/docs/">Documentation</a>
           <Link href="/workspaces">Workspaces</Link>
           <Link href="/privacy">Privacy</Link>
+          <a href="https://x.com/0xBasilisca" target="_blank" rel="noreferrer" aria-label="Follow on X">X ↗</a>
         </div>
       </footer>
     </div>

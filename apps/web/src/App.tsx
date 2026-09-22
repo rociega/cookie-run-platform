@@ -130,7 +130,7 @@ function Router() {
       <Route path="/sign-up/*?" component={SignUpPage} />
       <Route path="/rewards" component={Rewards} />
       {/* Legacy rewards URL retained while /rewards remains canonical. */}
-      <Route path="/earn-icpx" component={Rewards} />
+      <Route path="/earn" component={Rewards} />
       <Route path="/workspaces" component={Rentals} />
       <Route path="/rentals" component={Rentals} />
       <Route path="/marketplace" component={Marketplace} />

@@ -2,6 +2,8 @@
 
 Cookie Run is a secure, ephemeral GPU workspace platform. Choose a machine for a build, model run, preview, or migration, connect over SSH, and let the environment disappear when the session ends.
 
+Follow the project on X: https://x.com/0xBasilisca
+
 ## Why Cookie Chain COOK?
 
 **COOK on Cookie Chain is the cheaper default way to pay for a Cookie Run workspace.**

@@ -192,7 +192,7 @@ export default function PublicLanding() {
         <div className="header-center-links">
           <a
             className="header-x-link"
-             href="https://x.com/TheCookieChain/status/2096245693736186064"
+             href="https://x.com/0xBasilisca"
             target="_blank"
             rel="noreferrer"
             aria-label="Follow Cookie Run on X"

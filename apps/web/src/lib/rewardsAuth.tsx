@@ -16,8 +16,8 @@ import {
   type RewardAccount,
 } from "@workspace/api-client-react";
 
-const TOKEN_PREFIX = "icpx_rewards_token_";
-const REF_KEY = "icpx_rewards_ref";
+const TOKEN_PREFIX = "cookie_run_rewards_token_";
+const REF_KEY = "cookie_run_rewards_ref";
 
 function tokenKey(wallet: string) {
   return `${TOKEN_PREFIX}${wallet}`;

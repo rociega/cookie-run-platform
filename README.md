@@ -37,6 +37,33 @@ Solana mainnet SOL remains available as a separate **premium** payment route. It
 
 ![Cookie Run documentation](docs/images/cookie-run-docs-current.jpg)
 
+### Developer dashboard
+
+![Cookie Run developer dashboard](docs/images/cookie-run-dashboard-current.jpg)
+
+## Explore Cookie Run
+
+| Page | What it does |
+| --- | --- |
+| `/` | Introduces Cookie Run and the secure, short-lived GPU workspace model. |
+| `/platform` | Developer dashboard with the machine catalog, live rates, workspace launch, and Cookie Bridge entry point. |
+| `/dashboard` | Bookmark-compatible route to the developer dashboard. |
+| `/gpus` | Full hardware catalog with GPU specifications and availability. |
+| `/marketplace` | Browse and purchase available marketplace offerings. |
+| `/workspaces` | Review active and previous workspace rentals, connection details, and expiry. |
+| `/rewards` | Sign in with a wallet, earn platform points, complete missions, and view activity. |
+| `/stats` | Review platform and network activity. |
+| `/benchmarks` | Compare hardware benchmark data. |
+| `/docs/` | Read the Cookie Run setup, workflow, security, and SSH documentation. |
+
+## Bridge COOK
+
+The developer dashboard includes a **Bridge COOK** action for moving COOK between Solana and Cookie Chain. It launches the official Hyperlane-powered Cookie Bridge in a new tab, keeping wallet transactions on the verified bridge:
+
+https://hyperlane.cookiescan.io/
+
+The official bridge reports a 1:1 COOK route with no bridge fee. Network fees and delivery time still apply.
+
 ## How it works
 
 ```text
@@ -64,23 +91,12 @@ Destroy the workspace when finished
 - Access ends when the lease ends.
 - RPC credentials and provider tokens never enter public checkout data.
 
-## Local development
-
-Requirements: Node.js 20+, pnpm, and PostgreSQL for the API.
-
-```bash
-pnpm install
-pnpm dev
-```
-
-Runtime configuration is provided through environment variables. Never commit wallet secrets, RPC credentials, provider tokens, or `.env` files.
-
 ## Repository layout
 
 ```text
-artifacts/     Web application, documentation, and API service
-lib/           Shared API contracts and database schema
-scripts/       Development and maintenance scripts
+artifacts/     Cookie Run web app, documentation, and API service
+lib/           Shared contracts and data schema
+scripts/       Supporting project scripts
 ```
 
 ## License

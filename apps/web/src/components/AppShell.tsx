@@ -27,7 +27,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     location === href ||
     (href === "/platform" && location === "/dashboard") ||
     (href === "/workspaces" && location === "/rentals") ||
-    (href === "/rewards" && location === "/earn-icpx");
+    (href === "/rewards" && location === "/earn");
   const current = nav.find((item) => active(item.href))?.label ?? (location === "/privacy" ? "Privacy policy" : location === "/cookies" ? "Cookie policy" : "Page not found");
   
   useEffect(() => { setMobileOpen(false); }, [location]);

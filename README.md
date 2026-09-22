@@ -4,6 +4,41 @@ Cookie Run is a secure, ephemeral GPU workspace platform. Choose a machine for a
 
 Follow the project on X: https://x.com/0xBasilisca
 
+## Live app
+
+https://cookierun.wtf
+
+## Cookie Chain submission checklist
+
+Cookie Run is built as a Cookie Chain cApp:
+
+- **Wallet:** detects Nightly first and displays the connected wallet address.
+- **On-chain interaction:** creates a quoted COOK payment transaction on Cookie Chain.
+- **Transaction feedback:** shows wallet approval, broadcast, confirmation, success, timeout, and retry states.
+- **Application data:** displays live GPU inventory, rates, availability, workspaces, rewards, and activity.
+- **Bridge handoff:** links to the official Cookie Bridge at https://hyperlane.cookiescan.io/.
+
+For a quick verification:
+
+1. Open the live app and select **New Workspace**.
+2. Connect Nightly and confirm the wallet address appears.
+3. Choose a GPU and keep **COOK** selected as the default payment route.
+4. Review the quote, approve the transaction in Nightly, and wait for the confirmation state.
+5. Open **Workspaces** to review the resulting lease and its expiry.
+
+## Setup
+
+This repository is a pnpm workspace. Install dependencies and use the app-specific commands below:
+
+```bash
+pnpm install
+pnpm --filter @workspace/icpx-landing run dev
+pnpm --filter @workspace/icpx-docs run dev
+pnpm --filter @workspace/api-server run dev
+```
+
+The web app expects the API service and the project’s configured database/payment environment when running the full checkout flow. Never commit wallet keys, RPC credentials, provider tokens, or other secrets.
+
 ## Why Cookie Chain COOK?
 
 **COOK on Cookie Chain is the cheaper default way to pay for a Cookie Run workspace.**
@@ -96,10 +131,19 @@ Destroy the workspace when finished
 ## Repository layout
 
 ```text
-artifacts/     Cookie Run web app, documentation, and API service
-lib/           Shared contracts and data schema
-scripts/       Supporting project scripts
+apps/web/      Cookie Run web app
+apps/docs/     Cookie Run documentation site
+services/api/  Workspace lifecycle API
+packages/      Shared contracts and database schema
+docs/images/   Current product screenshots
 ```
+
+## Submission links
+
+- Live application: https://cookierun.wtf
+- Source code: https://github.com/rociega/cookie-run-platform
+- X profile: https://x.com/0xBasilisca
+- Cookie Bridge: https://hyperlane.cookiescan.io/
 
 ## License
 

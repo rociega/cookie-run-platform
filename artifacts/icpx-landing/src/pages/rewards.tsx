@@ -1064,8 +1064,8 @@ function QuizCard({
 
 /* ────────────────────────── Social ────────────────────────── */
 const SOCIAL_META: Record<string, { icon: React.ReactNode; url: string }> = {
-  x_follow: { icon: <Twitter className="h-4 w-4" />, url: "https://x.com/Cookie Runxyz" },
-  x_share: { icon: <Twitter className="h-4 w-4" />, url: "https://x.com/intent/post?text=Earning%20Cookie Run%20points%20for%20useful%20platform%20activity%20at%20https%3A%2F%2Fx.com%2FCookie Runxyz" },
+  x_follow: { icon: <Twitter className="h-4 w-4" />, url: "https://x.com/0xBasilisca" },
+  x_share: { icon: <Twitter className="h-4 w-4" />, url: "https://x.com/intent/post?text=Exploring%20Cookie%20Run%20secure%20GPU%20workspaces%20with%20%40CookieRun" },
 };
 
 function SocialCard({

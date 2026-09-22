@@ -13,7 +13,7 @@ import {
 } from "@solana/spl-token";
 import { Buffer } from "buffer";
 
-// Conservative SOL buffer (lamports) an ICPX payer needs on hand: ~1 signature
+// Conservative SOL buffer (lamports) a COOK payer needs on hand: ~1 signature
 // fee plus rent in case the operator's token account must be created. If it
 // already exists the idempotent create is a no-op and only the fee applies.
 export const ICPX_SOL_FEE_BUFFER = 2_100_000n;
